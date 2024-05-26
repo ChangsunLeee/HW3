@@ -18,3 +18,15 @@
 \
 Moudlue error의 경우, pip install 'error'(<-모들이름)을 통해 설치가능.\
 
+**result**
+처음 코드를 실행했을 때, 과적합(Overfitting)되는 경향이 생겼음.\
+![Figure_1](https://github.com/ChangsunLeee/HW3/assets/167077784/b935bcd1-c14d-4e51-9a4b-8aa3fb0dfcb8)\
+처음 Loss값을 받아보았을 땐, 줄어들다가 epoch이 증가함에 따라 Loss값이 줄어들지 않고 증가하거나 유지되는 경향을 보임.(epoch 1000)\
+이과정을 해소하기 위해, 드롭아웃을 사용하고 학습률을 낮췄으며, 과정을 확인하기 위해 Loss값이 50epoch이상 감소되지 않는다면 조기종료를 시키기로 함.\
+1. 드롭아웃을 쓴 이유-랜덤성부여\
+2. 학습율을 낮춘 이유-일반화 성능을 높이기 위해(훈련데이터셋에 너무 맞추지 않기 위해)\
+3. 조기종료를 하는 이유-훈련에 너무 많은 시간을 소요.\
+\
+바뀐코드로 돌린 결과\
+![Figure_2](https://github.com/ChangsunLeee/HW3/assets/167077784/f28ff995-398c-4cb2-bc30-3a36d8fcb2be)\
+시간이 지남에 따라 Loss값도 감소함.
