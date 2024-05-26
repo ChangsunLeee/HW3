@@ -32,7 +32,7 @@ Moudlue error의 경우, pip install 'error'(<-모들이름)을 통해 설치가
 시간이 지남에 따라 Loss값도 감소함.
 
 generate.py 실행 시\
-![image](https://github.com/ChangsunLeee/HW3/assets/167077784/2779bdf9-0d65-4e1d-ae63-344fe336efdc)
+![image](https://github.com/ChangsunLeee/HW3/assets/167077784/2779bdf9-0d65-4e1d-ae63-344fe336efdc)\
 일부단어가 불안전하거나 이어지지 않는 경우가 대부분.\
 이과정을 해소하기 위해선
 1. 더 많은 데이터로 모델 학습
